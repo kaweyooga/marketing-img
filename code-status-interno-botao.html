@@ -1,26 +1,53 @@
-<!-- IMPORTANTE!!!!!!!!!! -->
-<!-- Lembra que as classes não podem ter nomes comuns para não se confundir com as do sistema -->
 <style>
-    .marketing-fora{
-        display: flex;
-        align-items: center;
-    }
-
-    .marketing-body{
-
+    .marketing{
         margin: 0;
         padding: 0;
         border: 0;
         width: 100%;
+        text-align: center;
+        position: relative;
     }
 
-    .marketing-body img{
+    .marketing-imagem img{
         width: 100%;
     }
 
+    .marketing-botao {
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .marketing-botao-inner {
+        text-decoration: none !important;
+        color: #eee;
+        display: inline-block;
+        background-color: #25d366;
+        font-weight: bold;
+        padding: 10px 25px;
+        border-radius: 5px;
+    }
+
+    .marketing-botao-inner:hover {
+        background-color: #05a740;
+        color: #eee;
+    }
+    .marketing-botao-inner-position{
+        align-content: bottom;
+    }
+    ion-icon{
+        font-size: 24px;
+        margin-bottom: -6px;
+    }
 </style>
-<div class="marketing-fora">
-    <div class="marketing-body">
-        <img src="https://raw.githubusercontent.com/kaweyooga/marketing-img/main/PAGAMENTO-ONLINE.gif" alt="">
+
+<div class="marketing">
+    <div class="marketing-imagem">
+        <img src="https://raw.githubusercontent.com/kaweyooga/marketing-img/main/PAGAMENTO-ONLINE-2.gif" alt="">
+    </div>
+    
+    <!-- só o conteúdo do href já é suficiente -->
+    <div class="marketing-botao">
+        <a href="https://bit.ly/3sJqbwM" class="marketing-botao-inner" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon>   Entrar na Fila de Espera</a>
     </div>
 </div>
